@@ -1,0 +1,196 @@
+@import url("https://fonts.google.com/specimen/Plus+Jakarta+Sans");
+:root{
+--Red: hsl(1, 90%, 64%);
+--Blue: hsl(219, 85%, 26%);
+--White: hsl(0, 0%, 100%);
+--Very-light-grayish-blue: hsl(210, 60%, 98%);
+--Light-grayish-blue-1: hsl(211, 68%, 94%);
+--Light-grayish-blue-2: hsl(205, 33%, 90%);
+--Grayish-blue: hsl(219, 14%, 63%);
+--Dark-grayish-blue: hsl(219, 12%, 42%);
+--Very-dark-blue: hsl(224, 21%, 14%);
+}
+
+body{
+    background-color: var(--Very-light-grayish-blue);
+    margin: 0;
+    padding: 0;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    box-sizing:border-box;
+}
+.container{
+    background-color: var(--White);
+    margin: 0 auto;
+    padding: 1%;
+    width: 50%;
+
+}
+.notification-bar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+}
+.header{
+    width: 60%;
+}
+.header h3{
+    font-size: 1.8rem;
+}
+.mark p{
+    font-size: 1.1rem;
+    color: hsl(219, 12%, 42%);
+}
+#mark{
+    cursor: pointer;
+}
+.btn-primary{
+    background-color: hsl(228, 45%, 44%) ;
+    color: hsl(0, 0%, 100%);
+    border: none;
+    padding: 1% 3%;
+    border-radius: 40%;
+    font-size: 1.1rem;
+}
+@media screen and (max-width: 1022px){
+    .container{
+        width: 60%;
+    }
+}
+@media screen and (max-width: 567px){
+    .container{
+        width: 70%;
+    }
+    
+}
+@media screen and (max-width: 486px){
+    .container{
+        width: 90%
+    }
+    .header h3{
+        font-size: 1.5rem;
+    }
+    .mark p{
+        font-size: .85rem;
+    }
+}
+.notification-container{
+    margin: 0 30px;
+}
+.notification, .notification-1{
+    margin: 25px 0;
+    padding: 3% 3%;
+    display: flex;
+    gap: 5%;
+    align-items: center;
+    
+}
+.unread{
+    background-color: hsl(210, 60%, 98%) !important; 
+}
+.unread p:first-of-type::after{
+    content: "";
+    background-color: var(--Red);
+    width: 10px;
+    height: 10px;
+    display: inline-block;
+    border-radius: 50%;
+    margin-left: 4px;
+}
+.card-desc-1{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    column-gap: 15%;
+    width: 100%;
+}
+.card-description{
+    width: 80%;
+}
+.card-description, .card-desc{
+    display: flex;
+    flex-direction: column;
+}
+.profie-img{
+    width: 60px;
+    
+}
+.notification a, .notification-1 a{
+    text-decoration: none;
+
+}
+.notification p, .notification-1 p{
+    font-size: 1.1rem;
+}
+.profile-name:hover{
+    color:var(--Blue);
+}
+.my_pict{
+   
+    width: 50px;
+}
+.note, .time{
+    color: hsl(180, 10%, 50%)
+}
+.post{
+    color: var(--Very-dark-blue);
+    font-weight: 700;
+}
+.description{
+    margin: 0;
+}
+.time{
+    font-size: 1rem;
+    margin: 5px 0;
+}
+span:hover{
+    color: rgb(101, 101, 177);
+    cursor: pointer;
+}
+.message{
+    display: none;
+    width: 80%;
+    border: 1px solid hsl(180, 24%, 61%);
+    padding:10px;
+    margin-left: 90px;
+    margin-top: -20px;
+    border-radius: .3rem;
+    text-align: justify;
+}
+
+.message p{
+    font-weight: 200;
+    color:var(--Grayish-blue);
+}
+.message:hover{
+    background-color: var(--Light-grayish-blue-1);
+    cursor: pointer;
+}
+@media screen and (max-width:804px){
+    .message{
+        margin-left: 70px;
+    }
+}
+.message.active{
+    display: block;
+}
+.attribution{
+    text-align: center;
+}
+@media screen and (max-width: 640px){
+    .notification p, .notification-1 p{
+        font-size: 1.0rem;
+}
+}
+@media screen and (max-width: 365px){
+    .notification p, .notification-1 p{
+        font-size: .95rem;  
+    }
+    .profile-img{
+        width:40px;
+    }
+    .my_pict{
+        width: 50px;
+    }
+
+}
