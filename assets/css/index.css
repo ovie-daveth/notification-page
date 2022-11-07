@@ -65,7 +65,7 @@ body{
 }
 @media screen and (max-width: 486px){
     .container{
-        width: 90%
+        width: 100%
     }
     .header h3{
         font-size: 1.5rem;
@@ -79,7 +79,7 @@ body{
 }
 .notification, .notification-1{
     margin: 25px 0;
-    padding: 3% 3%;
+    padding: 3% 2%;
     display: flex;
     gap: 5%;
     align-items: center;
