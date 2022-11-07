@@ -79,7 +79,7 @@ body{
 }
 .notification, .notification-1{
     margin: 25px 0;
-    padding: 3% 2%;
+    padding: 3% 3%;
     display: flex;
     gap: 5%;
     align-items: center;
