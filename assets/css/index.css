@@ -65,7 +65,7 @@ body{
 }
 @media screen and (max-width: 486px){
     .container{
-        width: 100%
+        width: 90%
     }
     .header h3{
         font-size: 1.5rem;
